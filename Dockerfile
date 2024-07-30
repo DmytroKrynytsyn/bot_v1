@@ -29,7 +29,5 @@ COPY --from=builder /app/requirements.txt /app/
 RUN pip install -r requirements.txt
 RUN pip install /app/*.whl
 
-RUN ls /app
-
 # Command to run the application
 CMD ["python", "-m", "bot_v1.main"]
