@@ -1,0 +1,6 @@
+format.json
+.env
+venv
+.venv
+__pycache__
+poetry.lock

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "slack_bot"
+version = "0.1.0"
+description = ""
+authors = ["DmytroKrynytsyn <dmitry.krinitsyn@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bot_v1", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+slack-bolt = "^1.19.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+slack_bot = "bot_v1.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
